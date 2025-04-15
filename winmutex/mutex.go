@@ -39,9 +39,9 @@ type Mutex struct {
 //
 // It is the caller's responsibility to close the mutex that is returned,
 // which will close the underlying system handle and allow the allocated
-// operating system thread to be reused to the gorouting thread pool. Closing
-// the mutex will automatically unlock the mutex if it is locked at the time
-// it is closed.
+// operating system thread to be returned to the goroutine thread pool.
+// Closing the mutex will automatically unlock the mutex if it is locked at
+// the time it is closed.
 //
 // If the mutex name is invalid, or if the calling process does not have
 // sufficient permissions to create or access a named mutex, it returns
