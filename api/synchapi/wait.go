@@ -1,3 +1,5 @@
+//go:build windows
+
 package synchapi
 
 // Special return values for syscall.WaitForSingleObject().
